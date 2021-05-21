@@ -5,7 +5,7 @@
 ## ... intial set-up
 git clone https://github.com/ruben-source/iGEM-Chalmers-Gothenburg2021.git
 
-## pull, add, commit, push
+## ... pull, add, commit, push
 git pull origin master -- or -- git pull origin main  
 git add . -- or -- git add [file or dir to add]  
 git commit -m "[Text with changes]"  
