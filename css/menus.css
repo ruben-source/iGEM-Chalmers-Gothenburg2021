@@ -1,0 +1,139 @@
+/* TOP NAVIGATION BAR */
+.navbar { /* set background color and add sticky effect*/
+  background: #04AA6D;
+  position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+  z-index: 9;
+}
+
+.navbar:after {
+  content:'';
+  clear:both;
+  display: block;
+}
+  
+.navbar ul {
+  list-style: none;
+  margin-right: 20px;
+}
+
+.navbar > ul > li {
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px;
+  display: block;
+}
+
+.navbar ul li:hover a{
+  background: rgb(78, 77, 78);
+}
+  
+.navbar ul ul {
+  position: absolute;
+  padding: 0px;
+  min-width: 160px;
+  display: none;
+  top: 100%;
+  left: 0;
+}
+
+.navbar ul li:hover > ul {
+  display: block;
+}
+  
+.navbar ul ul li:hover > a{
+  background: #333;
+} 
+
+.navbar ul ul li {
+  position: relative;
+  border-bottom: solid;
+  border-width: 1px;
+}
+
+.navbar ul ul ul {
+  top: 0;
+  left: 100%;
+}
+
+.navbar ul ul ul li:hover a {
+  background-color: #333;
+  color: #efefef;
+}
+
+.navbar a.active{
+  background: gray;
+}
+
+/* TABLE OF CONTENT*/
+/*https://css-tricks.com/sticky-table-of-contents-with-scrolling-active-states/ */ 
+
+/* 1. Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 2. Make nav sticky */
+main > nav {
+  position: sticky;
+  top: 2rem;
+  align-self: start;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+  color: #333;
+  font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+  padding-right: 100px;
+  border-left: 1px solid #efefef;
+}
+
+.section-nav a {
+  text-decoration: none;
+  display: block;
+  padding: .125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover, .section-nav a:focus {
+  color: #666;
+}
+
+/** Poor man's reset **/
+* {
+  box-sizing: border-box;
+}
+
+.section-nav ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.section-nav li {
+  margin-left: 1rem;
+}
+
+.section-nav h1 {
+  font-weight: 300;
+}
+
+/** page layout **/
+main {
+  display: grid;
+  grid-template-columns: 1fr 15fr;
+  max-width: 100em;
+  width: 90%;
+  margin: 0 auto;
+}
