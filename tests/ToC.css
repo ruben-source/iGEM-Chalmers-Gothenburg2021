@@ -1,0 +1,66 @@
+.TableOfCont {
+	width:15%;
+	position: fixed;
+	top:20%;
+	display: block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	transition: all 0.7s;
+        left: -15%;
+        background: rgb(66, 75, 68);
+        border-radius: 5px;
+}
+
+
+.TableOfCont span, .TableOfCont a {
+   text-align: center;
+   display: block;
+   color: white;
+}
+
+.TableOfCont span { 
+   font-size: 25px;
+   font-weight: bold;
+   text-decoration: underline; 
+}
+
+.TableOfCont a { 
+   font-size: 15px;
+   font-weight: normal;
+}
+
+.TableOfCont a:hover{
+   font-weight: bold;
+   border-color: rgba(221,221,221,0);
+   background: rgb(116, 112, 112);
+}
+
+.to-top a {
+   font-size: 100%;
+}
+
+.to-top a:hover {
+   padding-left:0;
+   font-size: 150%;
+   background: none;
+}
+
+@media only screen and (max-width: 1336px){
+    .TableOfCont span { 
+        font-size: 20px;
+     }    
+}
+@media only screen and (max-width: 1102px){
+    .TableOfCont span { 
+        font-size: 17px;
+     }
+     .TableOfCont a { 
+        font-size: 13px;
+        font-weight: normal;
+     }
+}
+@media only screen and (max-width: 872px){
+    .TableOfCont { 
+        display: none;
+     }
+}

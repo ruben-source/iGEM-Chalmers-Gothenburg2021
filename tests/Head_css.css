@@ -1,0 +1,324 @@
+@import url("effects.css");
+
+/* ##########  
+General and variables
+########### */
+html {
+  height: 100%;
+}
+
+
+body {
+  height: 100%;
+  font-family: Garamond, Times, Serif;
+}
+
+:root {
+  --main-bg-color: rgb(238, 255, 240);
+  --def-title-size: 45px;
+  --def-sub-title-size: 40px;
+  --def-title-weight: bold;
+}
+
+p {
+  font-size:inherit;
+  font-family: inherit;
+}
+/*################ 
+box/card with shadows around it 
+##################*/ 
+.ghostwhite-box {
+   background-color: var(--main-bg-color);
+   margin: 10px 10%;
+   border: 1px solid rgba(18, 184, 37, 0.2);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   padding: 20px 5%;
+}
+
+.single-card {
+   background: var(--main-bg-color);
+   margin: 10px 0;
+   border-radius: 5px;
+   border: 1px solid rgba(18, 184, 37, 0.2);
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ##########  
+Titles
+########### */
+
+/* title with lines from text to borders */
+.sec-title {
+   font-size: var(--def-title-size);
+   font-weight: var(--def-title-weight); 
+   text-align: center;
+   width: 90%;
+   margin: 30px 5%;
+   border-bottom: 1px solid #000;
+   line-height: 0.1em;
+}
+
+.sub-sec-title {
+   font-size: var(--def-sub-title-size);
+   font-weight: var(--def-title-weight); 
+   text-align: center;
+   width: 90%;
+   margin: 30px 5%;
+   border-bottom: 1px solid #000;
+   line-height: 0.1em;
+}
+
+.sec-title span {
+    background: var(--main-bg-color); 
+}
+
+.sub-sec-title span {
+    background: var(--main-bg-color); 
+}
+
+.Top-title {
+   margin-left: 15%;
+   margin-top: 100px;
+   font-size: 100px;
+   line-height: 50px;
+   font-weight: bold;
+   background: white;
+   height: 170px;
+   font-family: "Courier New", monospace;
+   text-decoration: underline;
+}
+@media only screen and (max-width: 1139px){
+  .Top-title {
+      font-size:100px;
+      line-height: 50px;
+      height: 110px;
+  }
+}
+
+@media only screen and (max-width: 866px){
+  .Top-title {
+      font-size:55px;
+      height: 60px;
+  }
+}
+
+.body-content {
+   max-width: 900px;
+   margin: 0 auto;
+}
+
+.card-height {height: 500px;}
+.card-link-style {
+   padding-top: 100px;
+}
+
+.card-link-style a{
+   color: black;
+   text-decoration: none;
+}
+
+.details {
+   font-size: 40px;
+   font-weight: bold;
+   text-align: center;
+   padding-right: 50px;
+   padding-left: 50px; 
+}
+
+.introduction {
+   margin-top: 30px;
+   margin-bottom: 50px;
+   font-size: 22px;
+   font-weight: bold;
+}
+
+@media only screen and (max-width: 1139px){
+  .introduction {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 20px;
+ }
+}
+
+@media only screen and (max-width: 866px){
+  .introduction {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 18px;
+ }
+}
+
+.tilted-side-header {
+   width: 200px; height: 100px;
+   margin-left: -50px; margin-top: -50px;
+   transform: rotate(-30deg);   
+   background-color: #ffc;
+   /*background: radial-gradient(5% 110% at left, transparent 50%, #ffc 51%);*/
+   color: black;
+   font-size: 30px; font-weight: bold;
+   text-decoration: underline;
+   font-family: 'Schoolbell', arial, serif;
+   box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+   padding-top: 50px;
+   text-align: center;
+}
+
+.titled-side-header:after {
+   
+}
+.pin {
+  background-color: #aaa;
+  display: block;
+  height: 32px;
+  width: 2px;
+  position: relative;
+  left: 15px;
+  top: -15px;
+  z-index: 1;
+}
+
+.pin:after {
+  background-color: #A31;
+  background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.3), hsla(0,0%,0%,.3));
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1),
+              inset 3px 3px 3px hsla(0,0%,100%,.2),
+              inset -3px -3px 3px hsla(0,0%,0%,.2),
+              23px 20px 3px hsla(0,0%,0%,.15);
+  content: '';
+  height: 12px;
+  left: -5px;
+  position: absolute;
+  top: -10px;
+  width: 12px;
+}
+
+.pin:before {
+  background-color: hsla(0,0%,0%,0.1);
+  box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+  content: '';
+
+  height: 24px;
+  width: 2px;
+  left: 0;
+  position: absolute;
+  top: 8px;
+
+  transform: rotate(57.5deg);
+  -moz-transform: rotate(57.5deg);
+  -webkit-transform: rotate(57.5deg);
+  -o-transform: rotate(57.5deg);
+  -ms-transform: rotate(57.5deg);
+
+  transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -webkit-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  -o-transform-origin: 50% 100%;
+}
+
+/* ##########  
+SlideShow for images
+Called as 
+
+<div class="slideshow-container">
+  <div class="mySlides">
+     <div class="numbertext"></div>
+     
+     <img src="" style="width:100%;">
+     
+     <div class="text">Caption Two</div>
+  </div>
+  
+...
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div> 
+########### */
+
+*{box-sizing:border-box}
+
+
+/* Slideshow container */
+div .slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+div .mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+div .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+div .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+div .prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+div .text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+div .numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+div .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+div .active, .dot:hover {
+  background-color: #717171;
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

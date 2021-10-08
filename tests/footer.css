@@ -1,0 +1,88 @@
+footer {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ),url("https://github.com/ruben-source/iGEM-Chalmers-Gothenburg2021.github.io/blob/gh-pages/Images/ProCF.jpg?raw=true");
+    background-size: 100% 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.page-footer {
+    width: 100%;
+    padding: 5% 15%;
+    color: white;
+}
+.page-footer .row {
+    width: 100%;
+}
+
+.page-footer p {
+  font-size:75%;
+}
+
+.page-footer h6 {
+  font-size: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer-links{
+    padding-left:0;
+    list-style:none;
+    text-align: center;
+}
+
+.footer-links li{
+    display:block
+}
+
+.footer-links a{
+    font-size: 80%;
+    margin: 0; padding:0;
+    color:#fff;
+}
+
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover{
+    color:#3366cc;
+    text-decoration:none;
+}
+
+.footer-links.inline li{
+    display:inline-block
+}
+
+.page-footer .social-icons {
+  text-align:left;
+}
+.page-footer .social-icons a{
+    font-size: 200%;
+    color: rgb(85, 84, 84);
+}
+.page-footer .social-icons a:hover{
+    color: white;
+}
+.page-footer .social-icons li {
+    display:inline-block;
+    margin-bottom:0;
+}
+
+.page-footer hr {
+    color: white;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:0;
+    border-top:1px solid #eee
+}
+
+.sponsors {
+    width: 100%;
+    padding: 0% 0%;
+}
+
+.sponsors h3 {
+   text-align: center;
+   font-weight: bold;
+   color: white;
+}
+.sponsors img {
+   width: 100%;
+} 

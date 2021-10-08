@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url("https://cdn.jsdelivr.net/genericons/3.0.3/genericons.css");
+
+
+nav {
+  display:none;
+  position: fixed;
+  background-color: rgb(233, 238, 233);
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+          box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  border-radius: 10px;
+  left: 10px;
+  right: 10px;
+  top: 20px;
+  z-index: 50;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: normal;
+  
+}
+
+@media (min-width: 1024px) {
+  nav{
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
+  }
+}
+
+
+.menu {
+  width:80%;
+  margin:auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.menu img{
+  width: 90px;
+  max-width: 100px;
+}
+
+nav li::before{
+  content:none;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: block;
+  list-style-type: none;
+  text-transform: uppercase;
+  padding-left: 0;
+  text-indent: 0;
+}
+
+.menu li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align:center;
+      -ms-flex-align:center;
+          align-items:center;
+  text-decoration: none;
+  color: rgb(72, 67, 67);
+  padding: 15px;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+
+.menu > li > a{
+  height: 80px;
+  padding: 0 5px;
+}
+
+
+.menu li a:hover {
+  background: #ccc;
+  color: #fff;
+}
+
+.menu-item-has-children > a:after {
+  font-family: "Genericons";
+  content: "\f431";
+  padding-left: 5px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  -o-transition: transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+}
+
+
+nav ul ul ul {
+  position: absolute;
+  left: 100%;
+}
+
+nav ul li:hover > ul {
+  display: block;
+  color: #fff;
+  margin: 0 0 0 0;
+  padding-left: 0px;
+  background: rgb(93, 112, 101);
+}
+
+nav ul li:hover > ul a {
+  color: #fff;
+}
+
+.sub-menu li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 220px;  
+}
+.sub-menu li:hover,
+.sub-menu li a:hover {
+  background: #ddd;
+  color: #777;
+}
+
+nav ul ul ul {
+  margin: 0 0 0 100%;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.6);
+}
+
+.menu-item-has-children .menu-item-has-children:hover > a:after {
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 60%;
+      -ms-transform-origin: 50% 60%;
+          transform-origin: 50% 60%;
+}
