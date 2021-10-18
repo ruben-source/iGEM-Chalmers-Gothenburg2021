@@ -1,0 +1,269 @@
+.masthead-home{
+	background-attachment:scroll;
+	background-size:cover;
+	overflow: hidden;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	}
+
+.masthead-home .heading{
+	font-family: Catamaran;
+	font-size: 4rem; 
+	color:#cecece;
+	white-space: nowrap;
+}
+
+.masthead-page{
+	background-size:cover;
+	background-attachment:scroll;
+	height: 100vh;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.masthead-page .container{
+	margin-bottom:1rem;
+}
+.masthead-page .heading{
+	font-family: Catamaran;
+	font-size:3rem;
+	white-space: nowrap;
+	display:block;
+	color: white;
+}
+.heading small{
+	color: rgb(255, 255, 255);
+}
+
+.bg-mask {
+	 overflow: hidden;
+	 position: relative;
+	 background-size: cover;
+	 padding-top: 2rem;
+	 padding-bottom: 2rem;
+}
+
+.bg-mask:before {
+	 content: '';
+	 width: 100%;
+	 height: 100%;
+	 display: block;
+	 position: absolute;
+	 left: 0px;
+	 top: 0px;
+	 backdrop-filter: blur(5px);
+	 background: rgba(217, 217, 252, 0.5);
+}
+
+#home-poster{
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #AAAAAA;
+}
+
+/*Animation collection*/
+.appear {
+	 -moz-animation: bounce 2s infinite;
+	 -webkit-animation: bounce 2s infinite;
+	 animation: bounce 2s infinite;
+}
+
+h1::before {
+  content: attr(data-spotlight);
+  color: transparent;
+  position: absolute;
+  
+
+  -webkit-clip-path: ellipse(110px 110px at 0% 50%);
+  clip-path: ellipse(60px 60px at 0% 50%);
+  animation: spotlight 10s infinite;
+  animation-delay: 3s;
+  background-image: url("https://2021.igem.org/wiki/images/2/24/T--Chalmers-Gothenburg--magic-sport.png");
+  background-size: 140%;
+  background-position: center center;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+@keyframes spotlight {
+  0%, 100%{
+	-webkit-clip-path: ellipse(60px 60px at 0% 50%);
+	clip-path: ellipse(60px 60px at 0% 50%);
+  }
+  
+  50% {
+	-webkit-clip-path: ellipse(60px 60px at 100% 50%);
+	clip-path: ellipse(60px 60px at 100% 50%);
+  }
+  
+}
+
+/*The fade in*/
+.fade-in-img {
+  animation: fadeIn 3s;
+  -webkit-animation: fadeIn 3s;
+  -moz-animation: fadeIn 3s;
+  -o-animation: fadeIn 3s;
+}
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+/*The bouncing arrow*/
+#header-btn {
+	position:absolute;
+	top:-15vh;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+}
+#header-btn i:hover{
+	font-size: 4rem;
+	color: white;
+}
+#header-btn i{
+	font-size: 3rem;
+	color: white;
+}
+
+.bounce {
+	 -moz-animation: bounce 2s infinite;
+	 -webkit-animation: bounce 2s infinite;
+	 animation: bounce 2s infinite;
+	 animation-delay: 2s;
+}
+
+.bounce-page {
+	 -moz-animation: bounce 2s infinite;
+	 -webkit-animation: bounce 2s infinite;
+	 animation: bounce 2s infinite;
+
+}
+
+ @keyframes bounce {
+	 0%, 10%, 50%, 80%, 100% {
+		 transform: translateY(0);
+	}
+	 40% {
+		 transform: translateY(-10px);
+	}
+	 60% {
+		 transform: translateY(-3px);
+	}
+}
+
+
+
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  text-align: center;
+  visibility: hidden;
+  z-index: 100;
+  font-size:2.5rem;
+}
+
+#scroll-to-top i{
+  color: rgb(252, 195, 13);
+}
+
+#scroll-to-top i:hover{
+  color: rgb(215,82,80);
+}
+	
+
+
+.home-magicbg {
+  }
+.home-magicbg:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	content: ' ';
+	background-image:url("https://2021.igem.org/wiki/images/8/89/T--Chalmers-Gothenburg--bg-magic.png");
+	background-position: center 20%;
+	}
+
+.page-magicbg{
+	background-color: rgb(28, 152, 123);
+	overflow: hidden;
+	position: relative;
+	background-position: center center;
+	background-repeat: repeat;
+	background-size: cover;
+}
+
+.page-magicbg::before{
+	content: '';
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	background: url("https://2021.igem.org/wiki/images/3/38/T--Chalmers-Gothenburg--pattern.png");
+}
+
+
+.section-divider h1, h2{
+	color: aliceblue;
+	text-align: center;
+	padding-top: 3rem;
+	padding-bottom: 2rem;
+}
+.section-body{
+	margin-top: 1rem;
+	margin-bottom: 3rem;
+	
+}
+.section-body p{
+	padding-top:0.5rem;
+}
+				
+
+.progress-container{
+	z-index: 40;
+	width: 100%;
+	height: 9px;
+	position: fixed;
+	transition: all linear 0.05s;
+	background-color: transparent;
+	top: 105px;
+}				
+.progress-bar{
+	height: 9px;
+	background-color: brown;	
+}
